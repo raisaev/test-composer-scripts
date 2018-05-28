@@ -1,0 +1,26 @@
+{
+    "name": "raisaev/test-composer-scripts",
+    "description": "Test composer events",
+    "version": "1.0.0",
+    "keywords": [],
+    "homepage": "",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RAIsaev\\": "src"
+        }
+    },
+    "scripts": {
+        "post-package-update": [
+            "RAIsaev\\Composer::postPackageUpdate"
+        ],
+        "post-update-cmd": [
+            "RAIsaev\\Composer::postUpdateCmd"
+        ],
+        "post-install-cmd": [
+            "RAIsaev\\Composer::postInstallCmd"
+        ]
+    }
+}
